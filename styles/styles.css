@@ -1,5 +1,5 @@
 body {
-  height: auto;
+  height: 100vh;
   width: 100vw;
   margin: 0;
   display: -webkit-box;
@@ -9,16 +9,42 @@ body {
 }
 
 body .list-of-people-container {
-  height: 100%;
+  height: auto;
   width: 400px;
-  background-color: lightgreen;
+  background-color: #090f6f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .list-of-people-container .people-header-wrapper {
+  height: 80px;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  padding-top: 50px;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: large;
+  color: white;
+  border: 1px solid white;
+  font-weight: bold;
+  overflow-y: scroll;
+}
+
+body .list-of-people-container .list-of-people {
+  overflow-y: auto;
 }
 
 body .list-of-people-container .list-of-people .user-container {
@@ -28,12 +54,15 @@ body .list-of-people-container .list-of-people .user-container {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 50px;
+  color: white;
+  font-weight: bold;
+  margin-top: 30px;
 }
 
 body .list-of-people-container .list-of-people .user-container .name-wrapper {
@@ -41,53 +70,45 @@ body .list-of-people-container .list-of-people .user-container .name-wrapper {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-body
-  .list-of-people-container
-  .list-of-people
-  .user-container
-  .value-tracker-wrapper {
+body .list-of-people-container .list-of-people .user-container .value-tracker-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 10px;
 }
 
-body
-  .list-of-people-container
-  .list-of-people
-  .user-container
-  .value-tracker-wrapper
-  .increaseBtn {
+body .list-of-people-container .list-of-people .user-container .value-tracker-wrapper .increaseBtn {
   margin-left: 5px;
+  border: transparent;
+  border-radius: 3px;
+  background-color: greenyellow;
 }
 
-body
-  .list-of-people-container
-  .list-of-people
-  .user-container
-  .value-tracker-wrapper
-  .decreaseBtn {
+body .list-of-people-container .list-of-people .user-container .value-tracker-wrapper .decreaseBtn {
   margin-right: 5px;
+  border: transparent;
+  border-radius: 3px;
+  background-color: red;
 }
 
 body .content-container {
   height: 100vh;
   width: 100%;
-  background-color: azure;
+  background-color: #f5e3b9;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 body .content-container .header-text {
@@ -97,27 +118,28 @@ body .content-container .header-text {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: end;
-  -ms-flex-align: end;
-  align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   font-size: 4rem;
 }
 
 body .content-container .name-spinner {
-  height: 200px;
+  height: 380px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   font-size: 4rem;
+  font-weight: bold;
 }
 
 body .content-container .go-button-wrapper {
@@ -127,21 +149,22 @@ body .content-container .go-button-wrapper {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 40px;
 }
 
 body .content-container .go-button-wrapper .spin-button {
-  height: 60px;
-  width: 150px;
+  height: 35px;
+  width: 200px;
   border: transparent;
   border-radius: 5px;
-  background-color: #083699;
+  background-color: #090f6f;
   color: white;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 body .content-container .go-button-wrapper .spin-button:hover {

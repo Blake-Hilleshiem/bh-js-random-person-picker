@@ -1,19 +1,35 @@
 body {
-  height: auto;
+  // height: auto;
+  height: 100vh;
   width: 100vw;
   margin: 0;
   display: flex;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 
   .list-of-people-container {
-    height: 100%;
+    height: auto;
     width: 400px;
-    background-color: lightgreen;
+    // width: 1fr;
+    background-color: rgb(9, 15, 111);
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    padding-top: 50px;
+
+    .people-header-wrapper {
+      height: 80px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: large;
+      color: white;
+      border: 1px solid white;
+      font-weight: bold;
+      overflow-y: scroll;
+    }
 
     .list-of-people {
+      overflow-y: auto;
       .user-container {
         width: 300px;
         display: flex;
@@ -21,6 +37,9 @@ body {
         // justify-content: center;
         align-items: center;
         margin-bottom: 50px;
+        color: white;
+        font-weight: bold;
+        margin-top: 30px;
 
         .name-wrapper {
           display: flex;
@@ -34,10 +53,16 @@ body {
 
           .increaseBtn {
             margin-left: 5px;
+            border: transparent;
+            border-radius: 3px;
+            background-color: greenyellow;
           }
 
           .decreaseBtn {
             margin-right: 5px;
+            border: transparent;
+            border-radius: 3px;
+            background-color: red;
           }
         }
       }
@@ -47,7 +72,8 @@ body {
   .content-container {
     height: 100vh;
     width: 100%;
-    background-color: azure;
+    // width: 5fr;
+    background-color: rgb(245, 227, 185);
     display: flex;
     flex-direction: column;
 
@@ -61,12 +87,13 @@ body {
     }
 
     .name-spinner {
-      height: 200px;
+      height: 380px;
       width: 100%;
       display: flex;
       justify-content: center;
-      align-items: center;
+      align-items: flex-end;
       font-size: 4rem;
+      font-weight: bold;
     }
 
     .go-button-wrapper {
@@ -75,16 +102,16 @@ body {
       display: flex;
       justify-content: center;
       align-items: center;
-      // margin-top: 50px;
+      margin-top: 40px;
 
       .spin-button {
-        height: 60px;
-        width: 150px;
+        height: 35px;
+        width: 200px;
         border: transparent;
         border-radius: 5px;
-        background-color: rgb(8, 54, 153);
+        background-color: rgb(9, 15, 111);
         color: white;
-        font-size: 1.5rem;
+        font-size: 1rem;
       }
 
       .spin-button:hover {
