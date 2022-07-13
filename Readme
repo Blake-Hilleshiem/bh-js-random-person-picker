@@ -11,13 +11,12 @@ shows in red, as selcted on the side)
 - Must be randomly selected. The selected user should not be chosen again until at least everyone has been called on, except in the event of higher weights
 - Must disply the selected user.
 
-Extra: Even if you can't figure it out try to use this api to fetch the names:
+Extra: Even if you can't figure it out try to use this api to fetch the names: https://devpipeline-mock-api.herokuapp.com/api/get-users
 to render the users. I want to see at least an attempt this. (comment out if you can't get it working) must be capitalized and concatinated.
 
 - add some fun color phases, animations, etc.
 
 <!--
-- Math logic for generating list
 - Api
 - color change
 - animation
